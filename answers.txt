@@ -1,0 +1,11 @@
+A. 7 commits: The original repository included 5 commits, and we made 2 more; one when deleting DELETEME and editing README, and the other when adding status.txt. 
+	
+B. It was added to the original repository 4 years ago that we then forked and cloned.
+
+C. Git status lets you inspect the working directory and the staging area, while git log only operates on the committed history.
+
+D. An untracked file exists locally but isn't yet part of the git repository. By comparison, an unstaged file does exist in the working directory.
+
+E. Reset alters the index without changing the working tree, while checkout does change the working tree but doesn't touch the index.
+
+F. You will get a merge conflict if the uncommitted files have overlap with the changes that are being pulled.
