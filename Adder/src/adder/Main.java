@@ -18,10 +18,24 @@ class Main {
        
     }
 
-    private static int addArguments(String[] args) {
-        int sum = 0;
-        for(int i=0;i<args.length;i++)
-            sum += Integer.valueOf(args[i]);
-        return sum;
+
+   private static int addArguments(String[] args) {
+       int flag = 0;
+       int index = 0;
+       int sum = 0;
+       if(args[0].equals("-"))
+       {
+           flag=1;
+           index=1;
+       }
+       
+       for(int i=index; i < args.length; i++){
+           if(flag==0)
+               sum += Integer.valueOf(args[i]) ;
+           if(flag==1)
+               sum -= Integer.valueOf(args[i]) ;
+       }
+       return sum;
     }
+
 }
